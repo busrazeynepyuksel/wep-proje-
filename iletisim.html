@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="iletisim.css" />
+    <title>İletişim</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        padding-left: 8%;
+        margin-top: 30px;
+        padding-right: 8%;
+        background-position: center;
+        background-size: cover;
+        background-color: white;
+      }
+
+      hr {
+        color: #000000;
+        background-color: black;
+      }
+
+      .navbar {
+        height: 12%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        column-gap: 20px;
+      }
+
+      nav ul li a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        transition: ease 0.5s;
+      }
+
+      nav ul li a:hover {
+        color: rgb(255, 0, 0);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <a href="index.html">
+          <img src="img/logo1.jpg.jpg" alt="logo" />
+        </a>
+
+        <nav>
+          <ul>
+            <li><a href="hakkında.html">HAKKIMIZDA</a></li>
+            <li><a href="fiyat_bilgisi.php">FİYAT BİLGİSİ</a></li>
+            <li><a href="iletisim.html">İLETİŞİM</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <section id="iletisim">
+      <div class="container_form">
+        <h2>İletişim</h2>
+        <div class="contact-info">
+          <h3>Bizimle İletişime Geçin:</h3>
+          <ul>
+            <li>Telefon: 0553 149 69 06</li>
+            <li>E-posta: macars@gmail.com</li>
+            <li>Adres: Çamlibel,23, 61940, Çaykara/Mersin, Türkiye</li>
+          </ul>
+        </div>
+
+        <div class="contact-form">
+          <h3>Bize Mesaj Gönderin:</h3>
+          <form action="php/iletisim.php" method="POST">
+            <label for="ad">Ad Soyad:</label>
+            <input type="text" id="ad" name="ad" required />
+
+            <label for="email">E-posta:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="mesaj">Mesaj:</label>
+            <textarea id="mesaj" name="mesaj" rows="5" required></textarea>
+
+            <button type="submit">Gönder</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

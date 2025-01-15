@@ -1,0 +1,136 @@
+/* Genel Ayarlar */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 35px;
+}
+
+h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Container */
+.container_form {
+  width: 80%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* İletişim Bilgileri */
+.contact-info {
+  margin-bottom: 40px;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+  font-size: 18px;
+  color: #555;
+}
+
+.contact-info li {
+  margin-bottom: 12px;
+}
+
+.contact-info li::before {
+  content: "📞";
+  margin-right: 10px;
+  color: #ff0000;
+}
+
+/* İletişim Formu */
+.contact-form {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  font-size: 16px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #ff0000;
+  outline: none;
+}
+
+.contact-form button {
+  background-color: #ff0000;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #cc0000;
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  .contact-info ul {
+    font-size: 16px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 14px;
+  }
+}
+
+
+/* Footer Stili */
+footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 18px;
+}
+
+footer a {
+  color: #ff0000;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
